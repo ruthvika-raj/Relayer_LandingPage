@@ -21,6 +21,7 @@ import {
 import ctaGraphImage from "../imports/image-4.png";
 import logo from "../imports/Logo_for_Relayer.png";
 import { RelationshipCard } from "./components/RelationshipCard";
+// import { useNavigate } from "react-router-dom"
 
 const aiMoves = [
   {
@@ -54,6 +55,10 @@ export default function App() {
   const [comparisonView, setComparisonView] = useState<
     "storage" | "execution"
   >("execution");
+
+  const handleOnClick = () => {
+    window.location.replace("https://app-relayer.netlify.app");
+  }
 
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
@@ -96,7 +101,9 @@ export default function App() {
                   About us
                 </a>
               </nav>
-              <button className="px-4 py-2 text-sm hover:bg-[#EEF6F8] rounded-lg transition-colors">
+              <button 
+              onClick={handleOnClick}
+              className="px-4 py-2 text-sm hover:bg-[#EEF6F8] rounded-lg transition-colors">
                 Sign in
               </button>
             </div>
@@ -127,7 +134,9 @@ export default function App() {
 
               <div className="space-y-4">
                 <div className="flex flex-wrap items-center gap-4">
-                  <button className="group px-8 py-4 bg-[#307480] text-white rounded-xl hover:bg-[#1C3940] transition-all flex items-center gap-2 shadow-lg shadow-[#307480]/20">
+                  <button 
+                  onClick={handleOnClick}
+                  className="group px-8 py-4 bg-[#307480] text-white rounded-xl hover:bg-[#1C3940] transition-all flex items-center gap-2 shadow-lg shadow-[#307480]/20">
                     Get Started for Free
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -1019,7 +1028,9 @@ export default function App() {
 
                 {/* CTAs */}
                 <div className="flex flex-col sm:flex-row items-start gap-4">
-                  <button className="group px-8 py-4 bg-[#307480] text-white rounded-xl hover:bg-[#1C3940] transition-all flex items-center gap-2 shadow-lg shadow-[#307480]/20 text-lg font-medium whitespace-nowrap">
+                  <button 
+                  onClick={handleOnClick}
+                  className="group px-8 py-4 bg-[#307480] text-white rounded-xl hover:bg-[#1C3940] transition-all flex items-center gap-2 shadow-lg shadow-[#307480]/20 text-lg font-medium whitespace-nowrap">
                     Try Relayer for Free
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </button>
