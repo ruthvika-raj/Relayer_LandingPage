@@ -1020,11 +1020,8 @@ export default function App() {
                 {/* CTAs */}
                 <div className="flex flex-col sm:flex-row items-start gap-4">
                   <button className="group px-8 py-4 bg-[#307480] text-white rounded-xl hover:bg-[#1C3940] transition-all flex items-center gap-2 shadow-lg shadow-[#307480]/20 text-lg font-medium whitespace-nowrap">
-                    Get early access
+                    Try Relayer for Free
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                  </button>
-                  <button className="px-8 py-4 bg-white text-gray-900 border border-gray-300 rounded-xl hover:bg-[#EEF6F8] transition-all text-lg font-medium whitespace-nowrap">
-                    See how the weekly report works
                   </button>
                 </div>
 
